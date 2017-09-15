@@ -52,9 +52,9 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 "
 " Open NERDTree when starting up
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
 
-" Close alone NERDTree
+" Close NERDTree alone
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Open NERDTree with hot-key
