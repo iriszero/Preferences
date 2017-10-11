@@ -1,3 +1,7 @@
+set tabstop=4
+set shiftwidth=4
+set noexpandtab
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -79,3 +83,15 @@ call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
 call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
 call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
 call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
+
+set csprg=/usr/bin/cscope 
+set csto=0 
+set cst 
+set nocsverb 
+if filereadable("./cscope.out") 
+    cs add cscope.out 
+else 
+    cs add /usr/src/linux/cscope.out 
+endif 
+set csverb
+
