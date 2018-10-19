@@ -5,4 +5,6 @@ cp .bashrc ~
 cp .vimrc ~
 cp .tmux.conf ~
 
+vim +PluginInstall +qall
+~/.vim/bundle/youcompleteme/install.sh
 
