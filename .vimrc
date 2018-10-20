@@ -26,7 +26,7 @@ Plugin 'git://git.wincent.com/command-t.git'
 " Plugin 'file:///home/ubuntU/.vim/bundle/'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+	Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
@@ -40,6 +40,18 @@ Plugin 'bling/vim-airline'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'valloric/youcompleteme'
+Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'itchyny/lightline.vim'
+Plugin 'junegunn/fzf.vim'
+Plugin 'mattn/emmet-vim'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tpope/vim-eunuch'
+Plugin 'w0rp/ale'
+
+Bundle 'bbchung/clighter8'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -84,7 +96,7 @@ call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
 call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
 call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 
-set csprg=/usr/bin/cscope 
+set csprg=/usr/local/bin/cscope 
 set csto=0 
 set cst 
 set nocsverb 
@@ -94,4 +106,7 @@ else
     cs add /usr/src/linux/cscope.out 
 endif 
 set csverb
+let g:ycm_global_ycm_extra_conf = '$USER/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+let g:clighter_autostart = 1
+let g:clighter_libclang_file = '/usr/lib/libclang.so'
 
