@@ -40,7 +40,6 @@ Plugin 'bling/vim-airline'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'valloric/youcompleteme'
-Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'itchyny/lightline.vim'
@@ -49,8 +48,6 @@ Plugin 'mattn/emmet-vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-eunuch'
 Plugin 'w0rp/ale'
-
-Bundle 'bbchung/clighter8'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -109,4 +106,14 @@ set csverb
 let g:ycm_global_ycm_extra_conf = '$USER/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 let g:clighter_autostart = 1
 let g:clighter_libclang_file = '/usr/lib/libclang.so'
+
+syntax enable
+" if has('gui_running')
+"     set background=light
+" else
+    set background=dark
+" endif
+colorscheme solarized
+
+" let g:solarized_termcolors=256
 
