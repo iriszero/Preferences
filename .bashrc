@@ -116,16 +116,4 @@ if ! shopt -oq posix; then
   fi
 fi
 
-alias xv6='qemu-system-i386 -nographic -serial mon:stdio -hdb ~/git/xv6-public/fs.img ~/git/xv6-public/xv6.img -smp 1 -m 512'
-
-alias xd='make clean && make qemu-nox-gdb'
-alias gd='gdb kernel'
-
-
-# SSH
-PEM_PATH='~/gdrive/pem'
-alias ssh0='ssh -i $PEM_PATH/0.pem ubuntu@iris0.com'
-alias ssh1='ssh -i $PEM_PATH/1.pem ubuntu@*.*.*.*'
-alias ssh2='ssh -i $PEM_PATH/2.pem ubuntu@*.*.*.*'
-alias ssh_home='ssh iris@*.*.*.*'
-
+alias ssh_lab='ssh jason@*.*.*.*'
