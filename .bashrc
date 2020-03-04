@@ -116,4 +116,5 @@ if ! shopt -oq posix; then
   fi
 fi
 
-alias ssh_lab='ssh jason@*.*.*.*'
+alias ssh_lab='ssh jason@143.248.41.144'
+alias ssh_server="ssh -J jshuh@gw.kaist.ac.kr support@shader-shire.anlab"
