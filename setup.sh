@@ -5,15 +5,28 @@ if [[ $(/usr/bin/id -u) -ne 0 ]]; then
 fi
 
 # Change the apt source
-
 bash ./change-ubuntu-mirror.sh -k
 
-
 apt update && apt upgrade -y
-apt-get install -y build-essential cmake git vim htop python-pip python3-pip build-essential vim-nox ibus-gtk ibus-gtk3 tmux wireshark openssh-client openssh-server virtualenv vsftpd xclip
+# Essential
+apt-get install -y build-essential cmake git vim htop build-essential vim-nox tmux wireshark openssh-client openssh-server vsftpd xclip tree
+
+# Python
+apt-get install -y python-pip python3-pip virtualenv
+
+# Bluetooth
 apt-get install -y blueman pavucontrol
+
+# Korean Keyboard
+apt-get install -y ibus-gtk ibus-gtk3
+
+# Fast Downloader
 apt-get install -y aria2
+
+# Wallpaper
 apt-get install -y wallch
+
+# Gnome
 apt-get install -y gnome-tweaks gnome-shell-extensions
 
 # Vundle
