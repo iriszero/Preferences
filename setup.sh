@@ -14,6 +14,7 @@ apt-get install -y build-essential cmake git vim htop python-pip python3-pip bui
 apt-get install -y blueman pavucontrol
 apt-get install -y aria2
 apt-get install -y wallch
+apt-get install -y gnome-tweaks gnome-shell-extensions
 
 # Vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
