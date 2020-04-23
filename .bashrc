@@ -16,8 +16,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=1000000
+HISTFILESIZE=1000000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -87,10 +87,7 @@ fi
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -116,5 +113,14 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
 alias ssh_lab='ssh jason@143.248.41.144'
-alias ssh_server="ssh -J jshuh@gw.kaist.ac.kr support@shader-shire.anlab"
+alias ssh_shire="ssh -J jshuh@gw.kaist.ac.kr support@shader-shire.anlab"
+alias ssh_prydwen="ssh -J jshuh@gw.kaist.ac.kr support@shader-prydwen.anlab"
+
+export LLVM_INSTALL_DIR=/usr/lib/llvm-6.0
+export PATH=$PATH:/opt/pycharm-2019.3.5/bin/:/opt/clion-2019.3.5/bin:/opt/idea-IU-201.6668.121/bin
