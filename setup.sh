@@ -41,3 +41,5 @@ vim +PluginInstall +qall
 # Tmux
 cp .tmux.conf ~
 
+# Save your git crediental in memory (for 15 mins)
+git config --global credential.helper cache
