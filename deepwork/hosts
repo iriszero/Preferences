@@ -1,0 +1,21 @@
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1	localhost
+255.255.255.255	broadcasthost
+::1             localhost
+# End of section
+#
+# See Preferences/distraction.py
+#
+
+127.0.0.1	facebook.com # DISTRACTION
+127.0.0.1	naver.com	# DISTRACTION
+127.0.0.1	kakao.com	# DISTRACTION
+127.0.0.1	daum.net	# DISTRACTION
+127.0.0.1	kaist.ac.kr # DISTRACTION
+127.0.0.1	hanyang.ac.kr	# DISTRACTION
+# End distractions list
