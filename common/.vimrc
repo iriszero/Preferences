@@ -93,16 +93,6 @@ call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
 call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
 call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 
-set csprg=/usr/local/bin/cscope 
-set csto=0 
-set cst 
-set nocsverb 
-if filereadable("./cscope.out") 
-    cs add cscope.out 
-else 
-    cs add /usr/src/linux/cscope.out 
-endif 
-set csverb
 let g:ycm_global_ycm_extra_conf = '$USER/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 let g:clighter_autostart = 1
 let g:clighter_libclang_file = '/usr/lib/libclang.so'
