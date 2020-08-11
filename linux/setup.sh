@@ -1,5 +1,8 @@
 #!/bin/bash
 
+USER_HOME=$(getent passwd $SUDO_USER | cut -d: -f6)
+BASE_DIR=$(dirname "$0")
+
 if [[ $(dpkg -l|grep xserver) ]]; then
 	GUI_ON=true
 else
@@ -31,5 +34,5 @@ fi
 apt-get install -y aria2
 
 # Shell
-cp .bashrc ~
+cp $BASE_DIR/.bashrc $USER_HOME
 

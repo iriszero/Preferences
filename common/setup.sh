@@ -1,16 +1,19 @@
 #!/bin/bash
 
+USER_HOME=$(getent passwd $SUDO_USER | cut -d: -f6)
+BASE_DIR=$(dirname "$0")
+
 # vim
 # Vundle
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+git clone https://github.com/VundleVim/Vundle.vim.git $USER_HOME/.vim/bundle/Vundle.vim
 
-cp .vimrc ~
+cp $BASE_DIR/.vimrc $USER_HOME
 
 vim +PluginInstall +qall
-~/.vim/bundle/youcompleteme/install.sh
+$USER_HOME/.vim/bundle/youcompleteme/install.sh
 
 # Tmux
-cp .tmux.conf ~
+cp $BASE_DIR/.tmux.conf $USER_HOME
 
 # Save your git crediental in memory (for 15 mins)
 git config --global credential.helper cache
