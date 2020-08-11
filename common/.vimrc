@@ -98,14 +98,5 @@ let g:clighter_autostart = 1
 let g:clighter_libclang_file = '/usr/lib/libclang.so'
 
 syntax enable
-" if has('gui_running')
-"     set background=light
-" else
-    set background=dark
-" endif
-
-colorscheme solarized
-
-
-" let g:solarized_termcolors=256
+set background=dark
 
