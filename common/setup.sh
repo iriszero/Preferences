@@ -15,7 +15,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git $USER_HOME/.vim/bundle/Vun
 cp $BASE_DIR/.vimrc $USER_HOME
 
 vim +PluginInstall +qall
-python3 $USER_HOME/.vim/bundle/youcompleteme/install.py
+sudo python3 $USER_HOME/.vim/bundle/youcompleteme/install.py
 
 # Tmux
 cp $BASE_DIR/.tmux.conf $USER_HOME
