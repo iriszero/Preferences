@@ -10,28 +10,28 @@ else
 fi
 
 # Change the apt source
-bash $BASE_DIR/change-ubuntu-mirror.sh -k
+sudo $BASE_DIR/change-ubuntu-mirror.sh -k
 
-apt update && apt upgrade -y
+sudo apt update && apt upgrade -y
 # Essential
-apt-get install -y build-essential cmake git vim htop build-essential vim-nox tmux wireshark openssh-client openssh-server vsftpd xclip tree
+sudo apt install -y build-essential cmake git vim htop build-essential vim-nox tmux wireshark openssh-client openssh-server vsftpd xclip tree
 
 # Python
-apt-get install -y python2 python3 python-pip python3-pip virtualenv
+sudo apt install -y python2 python3 python-pip python3-pip virtualenv
 
 if [ $GUI_ON ]; then
 	# Bluetooth
-	apt-get install -y blueman pavucontrol
+	sudo apt install -y blueman pavucontrol
 	
 	# Wallpaper
-	apt-get install -y wallch
+	sudo apt install -y wallch
 
 	# Gnome
-	apt-get install -y gnome-tweaks gnome-shell-extensions
+	sudo apt install -y gnome-tweaks gnome-shell-extensions
 fi
 
 # Fast Downloader
-apt-get install -y aria2
+sudo apt install -y aria2
 
 # Shell
 cp $BASE_DIR/.bashrc $USER_HOME
