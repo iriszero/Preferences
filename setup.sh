@@ -6,6 +6,8 @@ if [[ $(/usr/bin/id -u) -ne 0 ]]; then
     exit
 fi
 
+./common/setup.sh
+
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
         ./linux/setup.sh
 elif [[ "$OSTYPE" == "darwin"* ]]; then

@@ -33,17 +33,3 @@ apt-get install -y aria2
 # Shell
 cp .bashrc ~
 
-# vim
-# Vundle
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-
-cp .vimrc ~
-
-vim +PluginInstall +qall
-~/.vim/bundle/youcompleteme/install.sh
-
-# Tmux
-cp .tmux.conf ~
-
-# Save your git crediental in memory (for 15 mins)
-git config --global credential.helper cache

@@ -13,7 +13,10 @@
 #
 
 127.0.0.1	facebook.com # DISTRACTION
+127.0.0.1	www.facebook.com # DISTRACTION
 127.0.0.1	naver.com	# DISTRACTION
+127.0.0.1	www.naver.com	# DISTRACTION
+127.0.0.1	youtube.com # DISTRACTION
 127.0.0.1	kakao.com	# DISTRACTION
 127.0.0.1	daum.net	# DISTRACTION
 127.0.0.1	kaist.ac.kr # DISTRACTION
