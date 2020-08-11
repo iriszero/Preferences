@@ -114,10 +114,6 @@ syntax enable
     set background=dark
 " endif
 
-call plug#begin('~/.vim/plugged')
-Plug 'https://github.com/altercation/vim-colors-solarized.git'
-call plug#end()
-
 colorscheme solarized
 
 
