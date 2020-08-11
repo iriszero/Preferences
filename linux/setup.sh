@@ -10,7 +10,7 @@ else
 fi
 
 # Change the apt source
-bash ./change-ubuntu-mirror.sh -k
+bash $BASE_DIR/change-ubuntu-mirror.sh -k
 
 apt update && apt upgrade -y
 # Essential
