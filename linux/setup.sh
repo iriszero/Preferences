@@ -34,3 +34,6 @@ sudo apt install -y aria2
 
 # Shell
 sudo apt install -y zsh
+
+# gcloud
+$BASE_DIR/install_gcloud.sh
