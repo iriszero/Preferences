@@ -6,3 +6,6 @@ curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyr
 
 # Update the package list and install the Cloud SDK
 sudo apt-get update && sudo apt-get install -y google-cloud-sdk
+
+gcloud init
+echo "alias ssh_jshuh='gcloud beta compute ssh --zone "us-west1-b" "instance-2" --project "arcane-effect-192612"'" >> ~/.zshrc
