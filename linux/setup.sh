@@ -37,3 +37,7 @@ sudo apt install -y zsh
 
 # gcloud
 $BASE_DIR/install_gcloud.sh
+
+# Powerline Fonts
+sudo apt-get install -y fonts-powerline
+
