@@ -34,5 +34,4 @@ fi
 sudo apt install -y aria2
 
 # Shell
-cp $BASE_DIR/.bashrc $USER_HOME
 

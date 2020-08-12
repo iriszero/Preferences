@@ -6,7 +6,7 @@
 #    exit
 # fi
 
-./common/setup.sh
+./common/pre/setup.sh
 
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
         ./linux/setup.sh
@@ -28,3 +28,5 @@ else
         # Unknown.
 	:
 fi
+
+./common/post/setup.sh
