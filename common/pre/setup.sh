@@ -9,6 +9,8 @@ fi
 BASE_DIR=$(dirname "$0")
 
 # vim
+cp $BASE_DIR/.vimrc $USER_HOME
+
 # Vundle
 git clone https://github.com/VundleVim/Vundle.vim.git $USER_HOME/.vim/bundle/Vundle.vim || :
 

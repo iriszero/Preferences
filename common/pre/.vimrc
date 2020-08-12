@@ -100,4 +100,5 @@ let g:clighter_libclang_file = '/usr/lib/libclang.so'
 
 syntax enable
 set background=dark
+nmap <F6> :NERDTreeToggle<CR>
 
