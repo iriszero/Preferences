@@ -1,26 +1,20 @@
 #!/bin/bash
 
-if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-	USER_HOME=$(getent passwd $USER | cut -d: -f6)
-elif [[ "$OSTYPE" == "darwin"* ]]; then
-	USER_HOME=$HOME
-fi
-
 BASE_DIR=$(dirname "$0")
 
 # vim
-cp $BASE_DIR/.vimrc $USER_HOME
+cp $BASE_DIR/.vimrc $HOME
 
 # Vundle
-git clone https://github.com/VundleVim/Vundle.vim.git $USER_HOME/.vim/bundle/Vundle.vim || :
+git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim || :
 
-cp $BASE_DIR/.vimrc $USER_HOME
+cp $BASE_DIR/.vimrc $HOME
 
 vim +PluginInstall +qall
-sudo python3 $USER_HOME/.vim/bundle/youcompleteme/install.py
+sudo python3 $HOME/.vim/bundle/youcompleteme/install.py
 
 # tmux
-cp $BASE_DIR/.tmux.conf $USER_HOME
+cp $BASE_DIR/.tmux.conf $HOME
 
 # START git
 # Save your git crediental in memory (for 15 mins)

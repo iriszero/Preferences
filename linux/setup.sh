@@ -1,6 +1,5 @@
 #!/bin/bash
 
-USER_HOME=$(getent passwd $USER | cut -d: -f6)
 BASE_DIR=$(dirname "$0")
 
 if [[ $(dpkg -l|grep xserver) ]]; then
