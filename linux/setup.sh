@@ -34,4 +34,4 @@ fi
 sudo apt install -y aria2
 
 # Shell
-
+sudo apt install -y zsh
