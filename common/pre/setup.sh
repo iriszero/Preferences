@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-	USER_HOME=$(getent passwd $SUDO_USER | cut -d: -f6)
+	USER_HOME=$(getent passwd $USER | cut -d: -f6)
 elif [[ "$OSTYPE" == "darwin"* ]]; then
 	USER_HOME=$HOME
 fi

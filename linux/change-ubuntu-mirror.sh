@@ -60,7 +60,7 @@ done
 echo "using repository(${REPOS})"
 
 ## change mirror
-sed -i.bak -re "s/([a-z]{2}.)?archive.ubuntu.com|security.ubuntu.com/${REPOS}/g" ${SL}
+sudo sed -i.bak -re "s/([a-z]{2}.)?archive.ubuntu.com|security.ubuntu.com/${REPOS}/g" ${SL}
 
 ## check
-apt update
+sudo apt update
