@@ -32,6 +32,9 @@ fi
 # Fast Downloader
 sudo apt install -y aria2
 
+# DNS Utils
+sudo apt install dnsutils
+
 # Shell
 sudo apt install -y zsh
 
