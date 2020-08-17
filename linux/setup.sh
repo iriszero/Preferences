@@ -16,7 +16,7 @@ sudo apt update && apt upgrade -y
 sudo apt install -y build-essential cmake git vim htop build-essential vim-nox tmux wireshark openssh-client openssh-server vsftpd xclip tree
 
 # Python
-sudo apt install -y python2 python3 python-pip python3-pip virtualenv
+sudo apt install -y python2 python3 python-pip python3-pip python3-dev virtualenv
 
 if [ $GUI_ON ]; then
 	# Bluetooth
