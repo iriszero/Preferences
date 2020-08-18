@@ -5,6 +5,7 @@
 #    echo "Not running as root"
 #    exit
 # fi
+BASE_DIR=$(dirname "$0")
 
 $BASE_DIR/common/pre/setup.sh
 
