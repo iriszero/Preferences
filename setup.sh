@@ -6,12 +6,12 @@
 #    exit
 # fi
 
-./common/pre/setup.sh
+$BASE_DIR/common/pre/setup.sh
 
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-        ./linux/setup.sh
+        $BASE_DIR/linux/setup.sh
 elif [[ "$OSTYPE" == "darwin"* ]]; then
-        ./mac/setup.sh
+        $BASE_DIR/mac/setup.sh
 elif [[ "$OSTYPE" == "cygwin" ]]; then
         # POSIX compatibility layer and Linux environment emulation for Windows
 	:
@@ -29,4 +29,4 @@ else
 	:
 fi
 
-./common/post/setup.sh
+$BASE_DIR/common/post/setup.sh
