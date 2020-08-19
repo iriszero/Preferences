@@ -21,5 +21,5 @@ $BASE_DIR/install_ohmyzsh.sh
 $BASE_DIR/zsh_antigen_ohmyzsh.sh
 $BASE_DIR/edit_hosts.sh
 
-sudo chsh -s /usr/bin/zsh
+chsh -s /usr/bin/zsh
 echo "alias ll='ls -alf'" >> $HOME/.zshrc
