@@ -4,7 +4,7 @@
 
 SL=/etc/apt/sources.list
 
-PARAM="r:hm:dna"
+PARAM="r:hm:kna"
 
 KAKAO=mirror.kakao.com
 NEOWIZ=ftp.neowiz.com
