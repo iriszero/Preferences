@@ -11,7 +11,7 @@ fi
 # Change the apt source
 sudo $BASE_DIR/change-ubuntu-mirror.sh -k
 
-sudo apt update && apt upgrade -y
+sudo apt update && sudo apt upgrade -y
 # Essential
 sudo apt install -y build-essential cmake git vim htop build-essential vim-nox tmux wireshark openssh-client openssh-server vsftpd xclip tree
 
