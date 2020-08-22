@@ -22,6 +22,9 @@ sudo apt install -y python2 python3 python3-pip python3-dev virtualenv
 if [ $GUI_ON ]; then
 	# Bluetooth
 	sudo apt install -y blueman pavucontrol
+
+	# Logitech
+	sudo apt install -y solaar
 	
 	# Wallpaper
 	sudo apt install -y wallch
