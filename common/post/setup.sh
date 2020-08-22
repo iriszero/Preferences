@@ -8,9 +8,7 @@ cp $BASE_DIR/.vimrc $HOME
 # Vundle
 git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim || :
 
-cp $BASE_DIR/.vimrc $HOME
-
-vim +PluginInstall +qall
+Vim +PluginInstall +qall
 sudo python3 $HOME/.vim/bundle/youcompleteme/install.py
 
 # tmux
