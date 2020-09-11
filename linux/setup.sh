@@ -19,6 +19,9 @@ sudo apt install -y build-essential cmake git vim htop build-essential vim-nox t
 # Python
 sudo apt install -y python2 python3 python3-pip python3-dev virtualenv
 
+# TLDR
+sudo apt install -y tldr
+
 if [ $GUI_ON ]; then
 	# Bluetooth
 	sudo apt install -y blueman pavucontrol
