@@ -28,6 +28,9 @@ sudo apt install -y fd-find
 # Ripgrep
 sudo apt install -y ripgrep
 
+# fzf
+sudo apt install -y fzf
+
 if [ $GUI_ON ]; then
 	# Bluetooth
 	sudo apt install -y blueman pavucontrol
