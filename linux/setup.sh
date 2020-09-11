@@ -22,6 +22,12 @@ sudo apt install -y python2 python3 python3-pip python3-dev virtualenv
 # TLDR
 sudo apt install -y tldr
 
+# fd-find
+sudo apt install -y fd-find
+
+# Ripgrep
+sudo apt install -y ripgrep
+
 if [ $GUI_ON ]; then
 	# Bluetooth
 	sudo apt install -y blueman pavucontrol

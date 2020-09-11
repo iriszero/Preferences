@@ -21,3 +21,6 @@ $BASE_DIR/edit_hosts.sh
 
 chsh -s /usr/bin/zsh
 echo "alias ll='ls -alf'" >> $HOME/.zshrc
+
+# fd-find / https://github.com/sharkdp/fd
+echo "alias fd=fdfind" >> $HOME/.zshrc
