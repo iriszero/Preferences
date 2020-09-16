@@ -14,6 +14,7 @@ sudo $BASE_DIR/change-ubuntu-mirror.sh -k
 sudo apt update && sudo apt upgrade -y
 
 # Essential
+echo "wireshark-common wireshark-common/install-setuid boolean true" | sudo debconf-set-selections
 sudo apt install -y build-essential cmake git vim htop build-essential vim-nox tmux wireshark openssh-client openssh-server vsftpd xclip tree
 
 # Python
