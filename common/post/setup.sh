@@ -24,3 +24,6 @@ echo "alias ll='ls -alf'" >> $HOME/.zshrc
 
 # fd-find / https://github.com/sharkdp/fd
 echo "alias fd=fdfind" >> $HOME/.zshrc
+
+echo 'eval "$(fasd --init auto)"' >> ~/.zshrc
+

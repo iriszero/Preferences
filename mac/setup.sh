@@ -7,6 +7,8 @@ brew install cmake git htop vim zsh tmux
 brew install python python3 pyenv-virtualenv python-pip python3-pip
 brew install aria2
 
+brew install fasd
+
 # Powerline Fonts
 # clone
 git clone https://github.com/powerline/fonts.git --depth=1
