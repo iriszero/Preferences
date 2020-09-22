@@ -15,7 +15,8 @@ sudo python3 $HOME/.vim/bundle/youcompleteme/install.py
 cp $BASE_DIR/.tmux.conf $HOME
 
 # Git Config
-cp $BASE_DIR/.gitconfig $HOME
+touch $HOME/.gitconfig
+cat $BASE_DIR/.gitconfig >> $HOME/.gitconfig
 
 $BASE_DIR/install_ohmyzsh.sh
 $BASE_DIR/zsh_antigen_ohmyzsh.sh
