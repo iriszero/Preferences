@@ -35,7 +35,7 @@ sudo apt install -y fzf
 # fasd
 sudo apt install -y fasd
 
-if [ $GUI_ON ]; then
+if [ "$GUI_ON" = true]; then
 	# Bluetooth
 	sudo apt install -y blueman pavucontrol
 
