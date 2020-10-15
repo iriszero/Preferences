@@ -23,10 +23,7 @@ $BASE_DIR/zsh_antigen_ohmyzsh.sh
 $BASE_DIR/edit_hosts.sh
 
 chsh -s /usr/bin/zsh
-echo "alias ll='ls -alf'" >> $HOME/.zshrc
+cat $BASE_DIR/aliases >> $HOME/.zshrc
 
-# fd-find / https://github.com/sharkdp/fd
-echo "alias fd=fdfind" >> $HOME/.zshrc
-
-echo 'eval "$(fasd --init auto)"' >> ~/.zshrc
-
+# gitconfig
+cp $BASE_DIR/.gitconfig >> $HOME/.gitconfig

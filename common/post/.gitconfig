@@ -1,7 +1,50 @@
+[credential]
+	helper = cache
+    
+[user]
+	name = Jason Huh
+	email = jaeseok.huh.0@gmail.com
+
 [alias]
-  co = checkout
-  ci = commit
-  st = status
-	br = branch
+    a = add
+    
+    # commit
+    c = commit
+    ci = commit
+
+    co = checkout
+    br = branch
+    unstage = reset HEAD --
+    uncommit = reset --soft HEAD^
+    last = log -1 HEAD
+    d = diff
+    pl = pull
+    ps = push
+
+    # status
+    s = status
+    st = status
+
+    # log
+    l = log --graph --date=short
+    changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
+    short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
+    simple = log --pretty=format:\" * %s\"
+    shortnocolor = log --pretty=format:\"%h %cr %cn %s\"
+
 [core]
-  editor = vim
+    editor = vim
+
+[color]
+  ui = true
+
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red
+  new = green
