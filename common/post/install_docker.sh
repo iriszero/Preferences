@@ -5,3 +5,6 @@ sudo apt install -y docker.io
 sudo groupadd docker
 sudo usermod -aG docker $USER
 newgrp docker 
+
+sudo apt install -y docker-compose
+
