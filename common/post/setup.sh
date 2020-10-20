@@ -33,4 +33,4 @@ cat $BASE_DIR/.gitconfig >> $HOME/.gitconfig
 cat $BASE_DIR/.zshrc_color >> $HOME/.zshrc
 
 # .ssh/config
-cp $BASE_DIR/.ssh_config >> $HOME/.ssh/config
+cat $BASE_DIR/.ssh_config >> $HOME/.ssh/config
