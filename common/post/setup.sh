@@ -23,7 +23,8 @@ $BASE_DIR/zsh_antigen_ohmyzsh.sh
 $BASE_DIR/edit_hosts.sh
 
 sudo chsh -s /usr/bin/zsh
-cat $BASE_DIR/aliases >> $HOME/.zshrc
+cat $BASE_DIR/.aliases >> $HOME/.aliases
+echo "source ~/.aliases" >> $HOME/.zshrc
 
 # gitconfig
 cat $BASE_DIR/.gitconfig >> $HOME/.gitconfig
