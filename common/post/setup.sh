@@ -26,4 +26,4 @@ sudo chsh -s /usr/bin/zsh
 cat $BASE_DIR/aliases >> $HOME/.zshrc
 
 # gitconfig
-cp $BASE_DIR/.gitconfig >> $HOME/.gitconfig
+cat $BASE_DIR/.gitconfig >> $HOME/.gitconfig
