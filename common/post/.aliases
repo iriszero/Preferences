@@ -49,9 +49,15 @@ alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'
 alias dns_flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 
 # Git
+alias ga='git add '
 alias gc="git commit -m"
 alias gs="git status"
 alias gr="git reset"
+alias gb='git branch '
+alias gd='git diff'
+alias gco='git checkout '
+alias gk='gitk --all&'
+alias gx='gitx --all'
 
 # fd-find; https://github.com/sharkdp/fd
 alias fd="fdfind"

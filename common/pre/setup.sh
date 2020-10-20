@@ -7,6 +7,3 @@ sudo apt install -y git
 
 # Curl
 sudo apt install -y curl
-
-cat .zprofile >> $HOME/.zprofile
-# END git
