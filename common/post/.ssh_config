@@ -1,0 +1,22 @@
+Host kaistgw
+  Hostname gw.kaist.ac.kr
+  User pp
+  Port 8022
+
+Host lahti
+  hostname shader-lahti.anlab
+  User jason-huh
+  IdentityFile ~/.ssh/anlab
+  ProxyJump kaistgw
+
+Host marcel
+  hostname shader-marcel.anlab
+  User jason-huh
+  IdentityFile ~/.ssh/anlab
+  ProxyJump kaistgw
+
+Host jshuh
+  hostname jshuh.com
+  User jason
+  IdentityFile ~/.ssh/jason
+  
