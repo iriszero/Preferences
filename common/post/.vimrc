@@ -30,7 +30,7 @@ Plugin 'git://git.wincent.com/command-t.git'
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
 Plugin 'preservim/nerdtree'
-Plugin 'preservim/syntastic'
+Plugin 'vim-syntastic/syntastic'
 Plugin 'tpope/vim-surround'
 Plugin 'kien/ctrlp.vim'
 Plugin 'altercation/vim-colors-solarized'
