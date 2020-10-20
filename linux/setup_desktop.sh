@@ -12,3 +12,5 @@ sudo apt install -y gnome-tweaks gnome-shell-extensions
 
 # Taskwarrior
 sudo apt install -y taskwarrior
+
+sudo /usr/bin/gsettings set org.gnome.shell favorite-apps "['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop']"
