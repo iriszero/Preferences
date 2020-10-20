@@ -34,3 +34,6 @@ cat $BASE_DIR/.zshrc_color >> $HOME/.zshrc
 
 # .ssh/config
 cat $BASE_DIR/.ssh_config >> $HOME/.ssh/config
+
+# vscode extensions
+cp $BASE_DIR/vscode_extensions/ $HOME/.vscode/extensions/ -r
