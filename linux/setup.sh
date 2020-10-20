@@ -36,17 +36,7 @@ sudo apt install -y fzf
 sudo apt install -y fasd
 
 if [ "$GUI_ON" = true]; then
-	# Bluetooth
-	sudo apt install -y blueman pavucontrol
-
-	# Logitech
-	sudo apt install -y solaar
-	
-	# Wallpaper
-	sudo apt install -y wallch
-
-	# Gnome
-	sudo apt install -y gnome-tweaks gnome-shell-extensions
+	$BASE_DIR/setup_desktop.sh
 fi
 
 # Fast Downloader
