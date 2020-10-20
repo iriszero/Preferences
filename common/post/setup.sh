@@ -28,3 +28,6 @@ echo "source ~/.aliases" >> $HOME/.zshrc
 
 # gitconfig
 cat $BASE_DIR/.gitconfig >> $HOME/.gitconfig
+
+# coloring
+cat $BASE_DIR/.zshrc_color >> $HOME/.zshrc
