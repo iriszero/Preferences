@@ -23,6 +23,9 @@ sudo apt install -y python2 python3 python3-pip python3-dev virtualenv
 # TLDR
 sudo apt install -y tldr
 
+## init needed
+tldr
+
 # fd-find
 sudo apt install -y fd-find
 
