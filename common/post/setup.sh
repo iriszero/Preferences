@@ -22,7 +22,7 @@ $BASE_DIR/install_ohmyzsh.sh
 $BASE_DIR/zsh_antigen_ohmyzsh.sh
 $BASE_DIR/edit_hosts.sh
 
-chsh -s /usr/bin/zsh
+sudo chsh -s /usr/bin/zsh
 cat $BASE_DIR/aliases >> $HOME/.zshrc
 
 # gitconfig
