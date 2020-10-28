@@ -53,6 +53,3 @@ sudo apt install -y zsh
 
 # Powerline Fonts
 sudo apt-get install -y fonts-powerline
-
-# VSCode
-sudo snap install code --classic
