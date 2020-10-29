@@ -38,7 +38,7 @@ sudo apt install -y fzf
 # fasd
 sudo apt install -y fasd
 
-if [ "$GUI_ON" = true]; then
+if [[ "$GUI_ON" = true ]]; then
 	$BASE_DIR/setup_desktop.sh
 fi
 
@@ -53,6 +53,3 @@ sudo apt install -y zsh
 
 # Powerline Fonts
 sudo apt-get install -y fonts-powerline
-
-# VSCode
-sudo snap install code --classic
