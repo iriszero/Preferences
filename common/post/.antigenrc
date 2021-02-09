@@ -8,6 +8,7 @@ antigen bundle docker
 antigen bundle heroku
 antigen bundle pip
 antigen bundle lein
+antigen bundle kubectl
 
 # Load bundles from external repos.
 antigen bundle zsh-users/zsh-completions
