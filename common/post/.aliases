@@ -74,4 +74,3 @@ alias fd="fdfind"
 
 # Kubernetes
 alias k=kubectl
-source <(kubectl completion bash | sed s/kubectl/k/g/)

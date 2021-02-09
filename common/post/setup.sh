@@ -35,6 +35,8 @@ cat $BASE_DIR/.gitconfig >> $HOME/.gitconfig
 # .ssh/config
 cat $BASE_DIR/.ssh_config >> $HOME/.ssh/config
 
+# fasd
+$BASE_DIR/fasd.sh
 
 if [[ "$GUI_ON" = true ]]; then
 	$BASE_DIR/setup_desktop.sh
