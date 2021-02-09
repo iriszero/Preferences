@@ -71,3 +71,7 @@ alias gx='gitx --all'
 
 # fd-find; https://github.com/sharkdp/fd
 alias fd="fdfind"
+
+# Kubernetes
+alias k=kubectl
+source <(kubectl completion bash | sed s/kubectl/k/g/)
