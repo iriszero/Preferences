@@ -18,9 +18,7 @@ cp $BASE_DIR/.tmux.conf $HOME
 touch $HOME/.gitconfig
 cat $BASE_DIR/.gitconfig >> $HOME/.gitconfig
 
-$BASE_DIR/install_ohmyzsh.sh
 $BASE_DIR/zsh_antigen_ohmyzsh.sh
-$BASE_DIR/edit_hosts.sh
 
 # coloring
 cat $BASE_DIR/.zshrc_color >> $HOME/.zshrc
@@ -33,11 +31,8 @@ echo "source ~/.aliases" >> $HOME/.zshrc
 cat $BASE_DIR/.gitconfig >> $HOME/.gitconfig
 
 # .ssh/config
+mkdir -p $HOME/.ssh/
 cat $BASE_DIR/.ssh_config >> $HOME/.ssh/config
 
 # fasd
 $BASE_DIR/fasd.sh
-
-if [[ "$GUI_ON" = true ]]; then
-	$BASE_DIR/setup_desktop.sh
-fi
