@@ -30,4 +30,4 @@ else
 	:
 fi
 
-# $BASE_DIR/common/post/setup.sh
+$BASE_DIR/common/post/setup.sh
