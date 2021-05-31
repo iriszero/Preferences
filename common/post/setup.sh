@@ -36,5 +36,3 @@ cat $BASE_DIR/.gitconfig >> $HOME/.gitconfig
 mkdir -p $HOME/.ssh/
 cat $BASE_DIR/.ssh_config >> $HOME/.ssh/config
 
-# fasd
-$BASE_DIR/fasd.sh
