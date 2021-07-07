@@ -17,6 +17,8 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 
 antigen bundle clvv/fasd fasd
 
+antigen bundle thewtex/tmux-mem-cpu-load
+
 # Select theme.
 antigen theme denysdovhan/spaceship-prompt
 
