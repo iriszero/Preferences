@@ -9,7 +9,7 @@ cp $BASE_DIR/.vimrc $HOME
 git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim || :
 
 vim +PluginInstall +qall
-sudo python3 $HOME/.vim/bundle/youcompleteme/install.py
+python3 $HOME/.vim/bundle/youcompleteme/install.py
 
 # tmux
 cp $BASE_DIR/.tmux.conf $HOME
