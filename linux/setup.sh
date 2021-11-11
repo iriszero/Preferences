@@ -9,7 +9,7 @@ else
 fi
 
 # Change the apt source
-sudo $BASE_DIR/change-ubuntu-mirror.sh -k
+# sudo $BASE_DIR/change-ubuntu-mirror.sh -k
 
 sudo apt update && sudo apt upgrade -y
 
