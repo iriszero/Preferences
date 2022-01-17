@@ -29,6 +29,8 @@ cat $BASE_DIR/.aliases >> $HOME/.aliases
 echo 'eval "$(fasd --init auto)"' >> $HOME/.zshrc
 echo "source ~/.aliases" >> $HOME/.zshrc
 
+cat $BASE_DIR/.zshrc_history >> $HOME/.zshrc
+
 # gitconfig
 cat $BASE_DIR/.gitconfig >> $HOME/.gitconfig
 
