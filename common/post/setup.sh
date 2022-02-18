@@ -34,6 +34,8 @@ cat $BASE_DIR/.zshrc_history >> $HOME/.zshrc
 # gitconfig
 cat $BASE_DIR/.gitconfig >> $HOME/.gitconfig
 
+pip install gpustat
+
 # .ssh/config
 mkdir -p $HOME/.ssh/
 cat $BASE_DIR/.ssh_config >> $HOME/.ssh/config
