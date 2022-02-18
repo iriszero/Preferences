@@ -18,7 +18,8 @@ echo "wireshark-common wireshark-common/install-setuid boolean true" | sudo debc
 sudo apt install -y build-essential cmake git vim htop build-essential vim-nox tmux wireshark openssh-client openssh-server vsftpd xclip tree
 
 # Python
-sudo apt install -y python2 python3 python3-pip python2-dev python3-dev virtualenv
+sudo apt install -y python2 python2-dev
+sudo apt install -y python3 python3-pip python3-dev virtualenv
 
 # TLDR
 sudo apt install -y tldr
