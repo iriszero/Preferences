@@ -15,7 +15,8 @@ sudo apt update
 
 # Essential
 echo "wireshark-common wireshark-common/install-setuid boolean true" | sudo debconf-set-selections
-sudo apt install -y build-essential cmake git vim htop build-essential vim-nox tmux wireshark openssh-client openssh-server vsftpd xclip tree
+sudo apt install -y build-essential cmake git vim build-essential vim-nox tmux wireshark openssh-client openssh-server vsftpd xclip tree
+sudo apt install -y htop iftop iotop
 
 # Python
 sudo apt install -y python2 python2-dev
