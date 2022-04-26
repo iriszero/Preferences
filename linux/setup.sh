@@ -55,3 +55,6 @@ sudo apt install -y zsh
 
 # Powerline Fonts
 sudo apt-get install -y fonts-powerline
+
+# Count LOC
+sudo apt install -y cloc
