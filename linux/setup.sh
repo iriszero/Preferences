@@ -50,7 +50,7 @@ fi
 sudo apt install -y aria2
 
 # DNS Utils
-sudo apt install dnsutils
+sudo apt install -y dnsutils
 
 # Shell
 sudo apt install -y zsh
