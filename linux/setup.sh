@@ -14,11 +14,14 @@ fi
 sudo apt update
 
 # Essential
+sudo apt install -y apt-utils
+
 echo "wireshark-common wireshark-common/install-setuid boolean true" | sudo debconf-set-selections
 sudo apt install -y build-essential cmake git vim build-essential vim-nox tmux wireshark openssh-client openssh-server vsftpd xclip tree
 
 sudo apt install -y htop iftop iotop
 sudo apt install -y bwm-ng
+
 
 # Python
 sudo apt install -y python2 python2-dev
