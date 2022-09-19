@@ -11,24 +11,24 @@ fi
 # Change the apt source
 # sudo $BASE_DIR/change-ubuntu-mirror.sh -k
 
-sudo apt update
+apt update
 
 # Essential
-sudo apt install -y apt-utils
+apt install -y apt-utils
 
 echo "wireshark-common wireshark-common/install-setuid boolean true" | sudo debconf-set-selections
-sudo apt install -y build-essential cmake git vim build-essential vim-nox tmux wireshark openssh-client openssh-server vsftpd xclip tree
+apt install -y build-essential cmake git vim build-essential vim-nox tmux wireshark openssh-client openssh-server vsftpd xclip tree
 
-sudo apt install -y htop iftop iotop
-sudo apt install -y bwm-ng
+apt install -y htop iftop iotop
+apt install -y bwm-ng
 
 
 # Python
-sudo apt install -y python2 python2-dev
-sudo apt install -y python3 python3-pip python3-dev virtualenv
+apt install -y python2 python2-dev
+apt install -y python3 python3-pip python3-dev virtualenv
 
 # TLDR
-sudo apt install -y tldr
+apt install -y tldr
 
 ## init needed
 tldr
