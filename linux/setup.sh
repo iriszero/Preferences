@@ -14,7 +14,7 @@ fi
 apt update
 
 # Essential
-apt install -y apt-utils
+apt install -y apt-utils dialog
 
 echo "wireshark-common wireshark-common/install-setuid boolean true" | sudo debconf-set-selections
 apt install -y build-essential cmake git vim build-essential vim-nox tmux wireshark openssh-client openssh-server vsftpd xclip tree
