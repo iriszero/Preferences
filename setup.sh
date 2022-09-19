@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# Check root permission
-# if [[ $(/usr/bin/id -u) -ne 0 ]]; then
-#    echo "Not running as root"
-#    exit
-# fi
+if [ "$EUID" -ne 0 ]
+  then echo "Please run as root"
+  exit
+fi
+
 BASE_DIR=$(dirname "$0")
 
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
