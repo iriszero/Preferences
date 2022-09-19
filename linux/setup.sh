@@ -34,32 +34,32 @@ apt install -y tldr
 tldr
 
 # fd-find
-sudo apt install -y fd-find
+apt install -y fd-find
 
 # Ripgrep
-sudo apt install -y ripgrep
+apt install -y ripgrep
 
 # fzf
-sudo apt install -y fzf
+apt install -y fzf
 
 # fasd
-sudo apt install -y fasd
+apt install -y fasd
 
 if [[ "$GUI_ON" = true ]]; then
 	$BASE_DIR/setup_desktop.sh
 fi
 
 # Fast Downloader
-sudo apt install -y aria2
+apt install -y aria2
 
 # DNS Utils
-sudo apt install -y dnsutils
+apt install -y dnsutils
 
 # Shell
-sudo apt install -y zsh
+apt install -y zsh
 
 # Powerline Fonts
-sudo apt-get install -y fonts-powerline
+apt-get install -y fonts-powerline
 
 # Count LOC
-sudo apt install -y cloc
+apt install -y cloc
