@@ -2,6 +2,8 @@
 
 BASE_DIR=$(dirname "$0")
 
+apt update 
+
 # START git
 apt install -y git
 
