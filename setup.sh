@@ -1,18 +1,15 @@
 #!/bin/bash
 
-if [ "$EUID" -ne 0 ]
-  then echo "Please run as root"
-  exit
-fi
+
 
 BASE_DIR=$(dirname "$0")
 
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-        $BASE_DIR/common/pre/linux.sh
-        $BASE_DIR/linux/setup.sh
+        sudo $BASE_DIR/common/pre/linux.sh
+        sudo $BASE_DIR/linux/setup.sh
 elif [[ "$OSTYPE" == "darwin"* ]]; then
-        $BASE_DIR/common/pre/mac.sh
-        $BASE_DIR/mac/setup.sh
+        sudo $BASE_DIR/common/pre/mac.sh
+        sudo $BASE_DIR/mac/setup.sh
 elif [[ "$OSTYPE" == "cygwin" ]]; then
         # POSIX compatibility layer and Linux environment emulation for Windows
 	:
