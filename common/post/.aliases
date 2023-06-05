@@ -68,6 +68,7 @@ alias gd='git diff'
 alias gco='git checkout '
 alias gk='gitk --all&'
 alias gx='gitx --all'
+alias gsu='git submodule update --init --recursive'
 
 # fd-find; https://github.com/sharkdp/fd
 alias fd="fdfind"
