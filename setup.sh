@@ -8,8 +8,8 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
         sudo $BASE_DIR/common/pre/linux.sh
         sudo $BASE_DIR/linux/setup.sh
 elif [[ "$OSTYPE" == "darwin"* ]]; then
-        sudo $BASE_DIR/common/pre/mac.sh
-        sudo $BASE_DIR/mac/setup.sh
+        $BASE_DIR/common/pre/mac.sh
+        $BASE_DIR/mac/setup.sh
 elif [[ "$OSTYPE" == "cygwin" ]]; then
         # POSIX compatibility layer and Linux environment emulation for Windows
 	:
